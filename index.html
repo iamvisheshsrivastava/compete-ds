@@ -1,1 +1,215 @@
-<h1>Hello </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CompeteDS - A Resource Hub for Data Science Enthusiasts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: #1673b1;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header, nav, main, footer {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 10px 0;
+      border-bottom: 1px solid #dcdcdc;
+      margin-bottom: 10px;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1673b1;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    .nav-links li {
+      display: inline-block;
+    }
+    .hero {
+      background-color: #1673b1;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background-color: #ffbd03;
+      color: #333;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #ffc933;
+    }
+    main {
+      margin-bottom: 20px;
+    }
+    section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #e1e1e1;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #1673b1;
+    }
+    section p {
+      margin-bottom: 10px;
+    }
+    footer {
+      padding: 20px 0;
+      text-align: center;
+      border-top: 1px solid #dcdcdc;
+      color: #666;
+    }
+    footer a {
+      color: #1673b1;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">CompeteDS</div>
+      <ul class="nav-links">
+        <li><a href="#competitions">Competitions</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>
+        <li><a href="https://github.com/iamvisheshsrivastava/CompeteDS" target="_blank">GitHub Repo</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Welcome to CompeteDS</h1>
+    <p>Your one-stop hub for Data Science competitions, news, and resources.</p>
+    <a href="#competitions">
+      <button class="cta-button">Explore Competitions</button>
+    </a>
+  </section>
+  <main>
+    <section id="competitions">
+      <h2>Ongoing Competitions</h2>
+      <p>Discover and participate in the latest data science competitions to sharpen your skills and win exciting prizes.</p>
+      <ul>
+        <li>
+          <strong>Kaggle Competition 1:</strong>
+          <a href="https://www.kaggle.com/competitions" target="_blank">Link to Kaggle</a>
+          <br/>
+          A brief description about the challenge, dataset, and deadlines.
+        </li>
+        <li>
+          <strong>DrivenData Competition:</strong>
+          <a href="https://www.drivendata.org/competitions/" target="_blank">Link to DrivenData</a>
+          <br/>
+          Another brief description about the objectives, evaluation metrics, etc.
+        </li>
+      </ul>
+    </section>
+    <section id="news">
+      <h2>Latest News & Highlights</h2>
+      <p>Stay updated with the newest trends and developments in Data Science and Machine Learning:</p>
+      <ul>
+        <li>
+          <a href="https://towardsdatascience.com" target="_blank">Breakthrough in Large Language Models</a>
+          <br/>
+          Learn about the recent advancements in NLP and LLMs.
+        </li>
+        <li>
+          <a href="https://www.analyticsvidhya.com/blog" target="_blank">Top 10 Data Science Articles This Week</a>
+          <br/>
+          A curated collection of articles on AI, ML best practices, and more.
+        </li>
+      </ul>
+    </section>
+    <section id="tutorials">
+      <h2>Tutorials & Resources</h2>
+      <p>Explore a variety of tutorials and guides on Data Science, Python, R, and more.</p>
+      <ol>
+        <li>
+          <strong>Python for Data Science:</strong>
+          <a href="https://docs.python.org/3/tutorial/" target="_blank">Official Python Docs</a>
+        </li>
+        <li>
+          <strong>R for Data Analysis:</strong>
+          <a href="https://www.r-project.org/help.html" target="_blank">R Project Docs</a>
+        </li>
+        <li>
+          <strong>Machine Learning Basics:</strong>
+          <a href="https://scikit-learn.org/stable/tutorial/" target="_blank">scikit-learn Tutorial</a>
+        </li>
+      </ol>
+    </section>
+    <section>
+      <h2>Get Involved</h2>
+      <p>CompeteDS is an open-source initiative. Your contributions—whether it's adding new competitions, news updates, or tutorials—are always welcome.</p>
+      <p>To contribute:</p>
+      <ul>
+        <li>Open a new issue if you have ideas or suggestions.</li>
+        <li>Fork the repository to make changes.</li>
+        <li>Submit a pull request to share your updates with the community.</li>
+      </ul>
+      <p>Visit our <a href="https://github.com/iamvisheshsrivastava/CompeteDS" target="_blank">GitHub Repo</a> for more details.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> CompeteDS. Hosted on <a href="https://iamvisheshsrivastava.github.io/CompeteDS" target="_blank">GitHub Pages</a>. View the <a href="https://github.com/iamvisheshsrivastava/CompeteDS" target="_blank">Source Code</a>.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
