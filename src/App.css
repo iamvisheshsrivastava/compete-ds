@@ -1,38 +1,195 @@
-.App {
+/* Global Styles */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Customization */
+.navbar {
+  background: linear-gradient(to right, #1a1a1a, #333);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #28a745 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: white !important;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #28a745 !important;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #ffffff, #e8f5e9);
+  border-radius: 15px;
+  margin: 50px auto;
+  max-width: 700px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.hero-section p {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+/* CTA Button */
+.cta-button {
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #fff;
+  background: #28a745;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.cta-button:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+.cta-button:active {
+  transform: scale(0.95);
+}
+
+/* Competitions Section */
+.competitions-section {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.competitions-section h2 {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  font-size: 1.2rem;
+  border-left: 5px solid #28a745;
+  padding: 15px;
+  transition: background 0.3s;
+}
+
+.list-group-item:hover {
+  background: #e8f5e9;
+}
+
+/* Learning Resources */
+.learning-resources {
+  background: linear-gradient(to right, #ffffff, #f9f9f9);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.learning-resources h2 {
+  color: #333;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.learning-resources h4 {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.learning-resources ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.learning-resources ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.learning-resources ul li a:hover {
+  color: #28a745;
+}
+
+/* Community Section */
+.community-section {
+  background: #222;
   color: white;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.community-section h2 {
+  color: #28a745;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.community-section .btn {
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  margin-top: 10px;
+}
+
+/* Statistics Section */
+.statistics-section {
+  padding: 50px;
+  background: linear-gradient(to right, #ffffff, #f4f4f4);
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-section h2 {
+  color: #333;
+  text-align: center;
+}
+
+.statistics-section .col-md-3 {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.statistics-section .col-md-3:hover {
+  transform: scale(1.05);
+}
+
+.statistics-section h3 {
+  font-size: 2rem;
+  color: #28a745;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding: 15px;
+  background: #222;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
 }
