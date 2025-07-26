@@ -1,3 +1,4 @@
+// This is the main App component for the CompeteDS website
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
