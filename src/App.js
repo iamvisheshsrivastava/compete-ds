@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="app-container">
+    <div className={`app-container ${darkMode ? "dark-mode" : ""}`}>
       {/* Navigation Bar */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div className="container">
@@ -24,6 +26,12 @@ function App() {
               <li className="nav-item"><a className="nav-link" href="#">Community</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Statistics</a></li>
             </ul>
+            <button
+              className="btn btn-outline-success ms-3"
+              onClick={() => setDarkMode(!darkMode)}
+            >
+              {darkMode ? "Light Mode" : "Dark Mode"}
+            </button>
           </div>
         </div>
       </nav>
@@ -43,6 +51,46 @@ function App() {
           <li className="list-group-item">DrivenData - Predicting Disease Spread</li>
           <li className="list-group-item">AI Blitz - Image Classification Challenge</li>
         </ul>
+      </section>
+
+      {/* Latest News */}
+      <section className="news-section container mt-5">
+        <h2 className="text-center fw-bold">Latest News</h2>
+        <div className="row">
+          <div className="col-md-4 mb-3">
+            <div className="card news-card h-100">
+              <div className="card-body">
+                <h5 className="card-title">Deep Learning Breakthroughs</h5>
+                <p className="card-text">
+                  Researchers unveil new techniques boosting model accuracy in image recognition tasks.
+                </p>
+                <a href="#" className="btn btn-success btn-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-3">
+            <div className="card news-card h-100">
+              <div className="card-body">
+                <h5 className="card-title">Kaggle Releases New Dataset</h5>
+                <p className="card-text">
+                  Explore the latest open-source dataset for natural language processing enthusiasts.
+                </p>
+                <a href="#" className="btn btn-success btn-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-3">
+            <div className="card news-card h-100">
+              <div className="card-body">
+                <h5 className="card-title">Community Events</h5>
+                <p className="card-text">
+                  Join upcoming webinars and workshops hosted by leading data scientists around the globe.
+                </p>
+                <a href="#" className="btn btn-success btn-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Learning Resources */}
@@ -81,6 +129,27 @@ function App() {
           <button className="btn btn-primary">Join Discord</button>
           <button className="btn btn-success ms-3">Follow on Twitter</button>
         </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="contact-section container mt-5">
+        <h2 className="text-center fw-bold">Get in Touch</h2>
+        <form className="mt-3">
+          <div className="row">
+            <div className="col-md-6">
+              <input type="text" className="form-control" placeholder="Name" />
+            </div>
+            <div className="col-md-6 mt-3 mt-md-0">
+              <input type="email" className="form-control" placeholder="Email" />
+            </div>
+          </div>
+          <div className="mt-3">
+            <textarea className="form-control" rows="4" placeholder="Message"></textarea>
+          </div>
+          <div className="text-center mt-3">
+            <button type="submit" className="btn btn-success">Send Message</button>
+          </div>
+        </form>
       </section>
 
       {/* Statistics Section */}
