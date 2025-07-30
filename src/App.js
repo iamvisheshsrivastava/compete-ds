@@ -1,10 +1,14 @@
-// This is the main App component for the CompeteDS website
-import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// Main App component rendering the CompeteDS landing page
 
+import React, { useState } from "react"; // React library and state hook
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap styles
+
+// Main functional component
 function App() {
+  // Track whether dark mode is enabled
   const [darkMode, setDarkMode] = useState(false);
 
+  // JSX that defines the page structure
   return (
     <div className={`app-container ${darkMode ? "dark-mode" : ""}`}>
       {/* Navigation Bar */}
@@ -29,6 +33,7 @@ function App() {
             </ul>
             <button
               className="btn btn-outline-success ms-3"
+              /* Toggle between dark and light mode */
               onClick={() => setDarkMode(!darkMode)}
             >
               {darkMode ? "Light Mode" : "Dark Mode"}
@@ -184,4 +189,5 @@ function App() {
   );
 }
 
+// Export the App component for rendering
 export default App;
