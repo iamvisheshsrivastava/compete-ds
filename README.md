@@ -1,5 +1,10 @@
 [![Status: In Progress](https://img.shields.io/badge/STATUS-In%20Progress-red.svg)](https://github.com/)
 
+# CompeteDS
+
+CompeteDS aims to bring together data science competitions, the latest news,
+and curated learning resources in a single place so enthusiasts can stay
+informed and engaged.
 
 # Getting Started with Create React App
 
