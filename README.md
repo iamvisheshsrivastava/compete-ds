@@ -73,3 +73,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 This README has been updated to demonstrate a modification.
+
+## New Features
+
+- **Scroll to Top Button**: When you scroll down the page, a circular button appears in the bottom-right corner allowing you to quickly return to the top.
+- **Dynamic Year**: The footer now automatically displays the current year.
