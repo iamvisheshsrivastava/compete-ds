@@ -1,12 +1,24 @@
 // Main App component rendering the CompeteDS landing page
 
-import React, { useState } from "react"; // React library and state hook
+import React, { useState, useEffect } from "react"; // React library and hooks
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap styles
 
 // Main functional component
 function App() {
   // Track whether dark mode is enabled
   const [darkMode, setDarkMode] = useState(false);
+  // State for showing the scroll-to-top button
+  const [showScroll, setShowScroll] = useState(false);
+
+  // Add scroll listener to display button when page is scrolled
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // JSX that defines the page structure
   return (
@@ -183,8 +195,18 @@ function App() {
 
       {/* Footer */}
       <footer className="footer text-center mt-5">
-        <p className="m-0">© 2025 CompeteDS | All Rights Reserved</p>
+        <p className="m-0">© {new Date().getFullYear()} CompeteDS | All Rights Reserved</p>
       </footer>
+
+      {/* Scroll-to-top button */}
+      {showScroll && (
+        <button
+          className="scroll-to-top btn btn-success"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          ↑ Top
+        </button>
+      )}
     </div>
   );
 }
