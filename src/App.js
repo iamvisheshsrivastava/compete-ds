@@ -56,7 +56,7 @@ function App() {
 
       {/* Hero Section */}
       <div className="hero-section text-center">
-        <h1 className="display-4 fw-bold text-success">Welcome to CompeteDS!</h1>
+        <h1 className="display-4 fw-bold text-success">Welcome to Vishesh!</h1>
         <p className="fs-5 text-muted">Your one-stop platform for all things Data Science.</p>
         <button className="cta-button">Explore Competitions</button>
       </div>
